@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="./icon.png"/>
+    <link rel="stylesheet" href="./styles.css">
+    <title>TETRIS</title>
+</head>
+<body>
+    <div class="modal-result" id="div-modal-result">
+        <div class="div-result">
+            <p>YOU LOST !!!</p>
+            <p id="p-game-score">Score: 0</p>
+            <button onclick="location.reload();">RESTART</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="board" id="board"></div>
+        <div class="game-controlls">
+            <button id="btn-start-pause">START</button>
+            <br><br><br><br>
+            <label id="label-game-score">Score: 0</label>
+        </div>
+    </div>
+
+    <div class="div-controlls">
+        <div class="keys-container">
+            <a href="javascript: BTN_UP();" class="key" title="ROTATE">
+                <span class="arrow">&#8593;</span>
+            </a>
+        </div>
+        <div class="keys-container">
+            <a href="javascript: BTN_LEFT();" class="key" title="MOVE LEFT">
+                <span class="arrow">&#8592;</span>
+            </a>
+            <a href="javascript: alert('USE THESE BUTTONS OR KEYBOARD');" class="key" title="USE THESE BUTTONS OR KEYBOARD">
+                <span class="char">!</span>
+            </a>
+            <a href="javascript: BTN_RIGHT();" class="key" title="MOVE RIGHT">
+                <span class="arrow">&#8594;</span>
+            </a>  
+        </div>
+        <div class="keys-container">
+            <a href="javascript: BTN_DOWN();" class="key" title="MOVE DOWN">
+                <span class="arrow">&#8595;</span>
+            </a>
+        </div>
+    </div>
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>
